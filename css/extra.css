@@ -1,0 +1,116 @@
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+.fs {
+  font-size: 0.8rem;
+}
+.main-fs {
+  font-size: 0.8rem;
+}
+
+.btn-nav,
+.btn-search-nav {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn-menu {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: block;
+}
+
+.btn-search {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: block;
+}
+
+.main-nav {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  top: 5rem;
+  left: 0;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  opacity: 1;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+.main-search-nav {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  top: 5rem;
+  left: 0;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  opacity: 1;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+.main-nav-links:link,
+.main-nav-links:visited {
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: rgba(20, 19, 19, 0.799);
+  padding: 2rem;
+  text-decoration: none;
+}
+.last {
+  margin-right: 0;
+}
+.main-nav-list {
+  flex-flow: column wrap;
+}
+.nav-open .main-nav {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  transform: translateX(0);
+}
+.search-open .main-search-nav {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  transform: translateX(0);
+}
+.nav-open .btn-nav[name="close-outline"] {
+  display: block;
+}
+.btn-nav[name="close-outline"] {
+  display: none;
+}
+
+.nav-open .btn-nav[name="menu-outline"] {
+  display: none;
+}
+
+.search-open .btn-search-nav[name="search-outline"] {
+  display: none;
+}
+.search-open .btn-search-nav[name="close-outline"] {
+  display: block;
+}
+.btn-search-nav[name="close-outline"] {
+  display: none;
+}
