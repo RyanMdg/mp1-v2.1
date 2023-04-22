@@ -114,3 +114,6 @@ body {
 .btn-search-nav[name="close-outline"] {
   display: none;
 }
+.prod-img {
+  width: 100%;
+}
