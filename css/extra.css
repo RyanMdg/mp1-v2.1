@@ -5,6 +5,9 @@ html {
 body {
   overflow-x: hidden;
 }
+.third-img {
+  width: 80%;
+}
 .fs {
   font-size: 0.8rem;
 }
