@@ -68,6 +68,7 @@
 
     <!-- Right elements -->
     <div class="d-flex gap-2 align-items-center">
+      <a href=""></a>
       <!-- Icon -->
       <a class="text-reset me-3" href="#">
         <a type="button" data-mdb-toggle="modal" data-mdb-target="#cartModal"> <ion-icon name="cart-outline" class="fs-5 text-white">
@@ -1211,7 +1212,49 @@
         
         <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body d-flex flex-column align-items-center gap-2" id="modalraid">
+      <div class="modal-body  d-flex flex-column   align-items-center gap-2" id="modalraid">
+        
+        <!-- Show-when-user-add-items -->
+        <div class="hide-added-modal with-cart">
+        <div class="added-items-cont  d-flex flex-column flex-wrap align-items-center">
+          <h6 class="text-uppercase text-black">review your cart</h6>
+          <span class="text-decoration-underline text-black-50 mb-3">1 item</span>
+          <!-- items-added -->
+          <div class="row">
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="/assets/watches/watch-1.png" style="width: 100%;" alt="">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <h6>Metropolis</h6>
+              <div>
+              <div class="counter">
+                <span class="down pt-2" onClick='decreaseCount(event, this)'>-</span>
+                <input type="text" value="1">
+                <span class="up pt-2" onClick='increaseCount(event, this)'>+</span>
+                <p class="ms-3 pt-2">$500.00</p>
+              </div>
+              <hr>
+                <div class="d-flex justify-content-between">
+                  <p>subtotal</p>
+                  <p>$500.00</p>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <p>Shipping</p>
+                  <p>Free</p>
+                </div>
+              </div>
+            
+            </div>
+            <button class="checkout-btn text-center mt-5">checkout</button>
+          <button class="checkout-btn view-cart-btn text-center mt-3">view cart</button>
+          </div>
+        </div>
+        </div>
+
+
+        <!--SHOW-ONLY-WHEN-USER-DONT-ADD-ITEMS -->
+        <div class=" no-cart">
+        <div class="d-flex  flex-column justify-content-center text-center">
         <h5 class="text-uppercase ">review your cart</h5>
         <span class="text-black-50">Your cart is currenlty empty</span>
         <a href="" class="text-uppercase bg-white border border-dark text-decoration-none text-black w-100 p-2 text-center" data-mdb-toggle="modal" data-mdb-target="#exampleModal">continue shopping</a>
@@ -1225,7 +1268,8 @@
             Shop now
           </a>
         </div>
-
+        </div>
+        </div>
       </div>
       
     </div>
