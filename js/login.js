@@ -9,6 +9,7 @@ const btnCart = document.querySelectorAll(".cart-btn");
 // const addToCart = btnCart.addEventListener("click", function () {
 //   noCart.classList.add("no-cart-modal");
 // });
+
 // add-to-cart-counter
 var count = "";
 cart.textContent = count;
@@ -24,6 +25,7 @@ for (let i = 0; i < btnCart.length; i++)
     noCart.classList.add("no-cart-modal");
     withCart.classList.remove("hide-added-modal");
   });
+
 // QUANTITY-COMPONENTS
 function increaseCount(a, b) {
   var input = b.previousElementSibling;
