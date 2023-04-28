@@ -180,3 +180,37 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
+/* HOVER-SECTIONS */
+
+.shop-hover:hover {
+  border: solid 1px #000000;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.shop-hover {
+  transition: all 0.5s;
+}
+.nav-hover:hover {
+  transform: translateY(-0.2rem);
+}
+.nav-hover {
+  transition: all 0.3s;
+}
+.review-hover:hover {
+  box-shadow: 2px 1px 31px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 1px 31px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 1px 31px 0px rgba(0, 0, 0, 0.75);
+}
+.review-hover {
+  transition: all 0.3s;
+}
+.insta-hover:hover {
+  transform: scale(1.5);
+}
+.insta-hover {
+  transition: all 1s;
+}
+.insta {
+  overflow: hidden;
+}
